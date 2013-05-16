@@ -1,4 +1,6 @@
 Title: Game of Life in Javascript
+Tags: 20%, 2010
+Summary: [Gioco della vita](http://it.wikipedia.org/wiki/Gioco_della_vita) di John Conway scritto in Javascript e disegnato sul `canvas` HTML.
 
 [Gioco della vita](http://it.wikipedia.org/wiki/Gioco_della_vita) di
 John Conway scritto in Javascript e disegnato sul `canvas` HTML.
@@ -6,10 +8,6 @@ John Conway scritto in Javascript e disegnato sul `canvas` HTML.
 Click per brulicare, click per fermare, doppio click per ricominciare.
 
 Quando si dice l'essenzialità.
-
-Il [codice su GitHub](https://github.com/rjack/game-of-life) è
-cristallizzato su un laconico _sketching the UI_, ennesima prova che
-scrivere le GUI è una grandissima rottura di scatole.
 
 <canvas id="canvas"></canvas>
 
@@ -45,3 +43,7 @@ scrivere le GUI è una grandissima rottura di scatole.
 	}, false);
 }())
 </script>
+
+Il [codice su GitHub](https://github.com/rjack/game-of-life) è
+cristallizzato su un laconico _sketching the UI_, ennesima prova di
+quanto scrivere le GUI sia una grandissima rottura di scatole.
