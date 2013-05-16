@@ -3,7 +3,8 @@
 <head>
         <meta charset="utf-8">
         <title>parzialmente.it - Giacomo Ritucci</title>
-        <link rel="stylesheet" href="../theme/css/main.css">
+        <link rel="stylesheet" href="http://parzialmente.it/theme/css/main.css">
+                <link href="http://parzialmente.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="parzialmente.it Atom Feed" />
                 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,9 +13,9 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">parzialmente.it </a></h1>
+                <h1><a href="http://parzialmente.it/">parzialmente.it </a></h1>
                 <nav><ul>
-                                                                                    <li ><a href="../category/10.html">10%</a></li>
+                                                                                    <li ><a href="http://parzialmente.it/category/code.html">code</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
                 
@@ -22,18 +23,57 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../javascript-game-of-life.html">Javascript Game of&nbsp;Life</a></h1> 
+                    <h1 class="entry-title"><a href="http://parzialmente.it/game-of-life-in-javascript.html">Game of Life in&nbsp;Javascript</a></h1> 
                     <footer class="post-info">
-        <abbr class="published" title="2013-05-16T21:23:53.635011">
+        <abbr class="published" title="2013-05-16T22:57:29.842140">
                 gio 16 maggio 2013
         </abbr>
 
                 <address class="vcard author">
-                By <a class="url fn" href="../author/giacomo-ritucci.html">Giacomo Ritucci</a>
+                By <a class="url fn" href="http://parzialmente.it/author/giacomo-ritucci.html">Giacomo Ritucci</a>
         </address>
-        <p>In <a href="../category/10.html">10%</a>. </p>
+        <p>In <a href="http://parzialmente.it/category/code.html">code</a>. </p>
 
-</footer><!-- /.post-info --><p>Lorem ipsum sic&nbsp;amet</p>                </article>
+</footer><!-- /.post-info --><p><a href="http://it.wikipedia.org/wiki/Gioco_della_vita">Gioco della vita</a> di John Conway scritto in Javascript e disnegnato sul canvas&nbsp;<span class="caps">HTML</span>.</p>
+<p>Click per cominciare, click per fermare, doppio click per&nbsp;ricominciare.</p>
+<p>Quando si dice&nbsp;l&#8217;essenzialità.</p>
+<canvas id="canvas"></canvas>
+
+<script type="text/javascript" src="/static/js/game-of-life/grid.js"></script>
+
+<script type="text/javascript" src="/static/js/game-of-life/graphics.js"></script>
+
+<script type="text/javascript" src="/static/js/game-of-life/game-of-life.js"></script>
+
+<script type="text/javascript">
+(function () {
+    // TODO: give a decent initial configuration instead of null (random)
+    GOL.init(320, 240, 1, 1, null);
+    var cnv = document.getElementById("canvas");
+    var running = false;
+    cnv.addEventListener("click", function () {
+        running = !running
+        if (running) {
+            GOL.start();
+        } else {
+            GOL.stop();
+            }
+    }, false);
+    cnv.addEventListener("dblclick", function () {
+        // http://stackoverflow.com/a/880518/54967
+        if (document.selection && document.selection.empty) {
+            document.selection.empty();
+        } else if (window.getSelection) {
+            window.getSelection().removeAllRanges();
+        }
+        if (running) {
+            running = false;
+            GOL.stop();
+        }
+        GOL.init(320, 240, 1, 1, null);
+    }, false);
+}())
+</script>                </article>
                                     <p class="paginator">
         Page 1 / 1
     </p>
@@ -50,7 +90,7 @@
                                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="http://parzialmente.it/None" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://parzialmente.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
                                                     <li><a href="https://github.com/rjack/">github</a></li>
                                                     <li><a href="https://twitter.com/giacomoritucci">twitter</a></li>
