@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>parzialmente.it</title><link href="http://parzialmente.it/" rel="alternate"></link><link href="http://parzialmente.it/feeds/all.atom.xml" rel="self"></link><id>http://parzialmente.it/</id><updated>2013-05-16T23:09:16+02:00</updated><entry><title>Game of Life in Javascript</title><link href="http://parzialmente.it/game-of-life-in-javascript.html" rel="alternate"></link><updated>2013-05-16T23:09:16+02:00</updated><author><name>Giacomo Ritucci</name></author><id>tag:parzialmente.it,2013-05-16:game-of-life-in-javascript.html</id><summary type="html">&lt;p&gt;&lt;a href="http://it.wikipedia.org/wiki/Gioco_della_vita"&gt;Gioco della vita&lt;/a&gt; di
+<feed xmlns="http://www.w3.org/2005/Atom"><title>parzialmente.it</title><link href="http://parzialmente.it/" rel="alternate"></link><link href="http://parzialmente.it/feeds/all.atom.xml" rel="self"></link><id>http://parzialmente.it/</id><updated>2013-05-16T23:19:50+02:00</updated><entry><title>Game of Life in Javascript</title><link href="http://parzialmente.it/game-of-life-in-javascript.html" rel="alternate"></link><updated>2013-05-16T23:19:50+02:00</updated><author><name>Giacomo Ritucci</name></author><id>tag:parzialmente.it,2013-05-16:game-of-life-in-javascript.html</id><summary type="html">&lt;p&gt;&lt;a href="http://it.wikipedia.org/wiki/Gioco_della_vita"&gt;Gioco della vita&lt;/a&gt; di
 John Conway scritto in Javascript e disegnato sul &lt;code&gt;canvas&lt;/code&gt; &lt;span class="caps"&gt;HTML&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Click per brulicare, click per fermare, doppio click per&amp;nbsp;ricominciare.&lt;/p&gt;
 &lt;p&gt;Quando si dice&amp;nbsp;l&amp;#8217;essenzialità.&lt;/p&gt;
-&lt;p&gt;Il &lt;a href="https://github.com/rjack/game-of-life"&gt;codice su GitHub&lt;/a&gt; è
-cristallizzato su un laconico &lt;em&gt;sketching the &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/em&gt;, ennesima prova che
-scrivere le &lt;span class="caps"&gt;GUI&lt;/span&gt; è una grandissima rottura di&amp;nbsp;scatole.&lt;/p&gt;
 &lt;canvas id="canvas"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/javascript" src="/static/js/game-of-life/grid.js"&gt;&lt;/script&gt;
@@ -42,4 +39,8 @@ scrivere le &lt;span class="caps"&gt;GUI&lt;/span&gt; è una grandissima rottura
         GOL.init(320, 240, 1, 1, null);
     }, false);
 }())
-&lt;/script&gt;</summary></entry></feed>
+&lt;/script&gt;
+
+&lt;p&gt;Il &lt;a href="https://github.com/rjack/game-of-life"&gt;codice su GitHub&lt;/a&gt; è
+cristallizzato su un laconico &lt;em&gt;sketching the &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/em&gt;, ennesima prova di
+quanto scrivere le &lt;span class="caps"&gt;GUI&lt;/span&gt; sia una grandissima rottura di&amp;nbsp;scatole.&lt;/p&gt;</summary></entry></feed>
