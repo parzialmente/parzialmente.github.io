@@ -29,7 +29,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-STATIC_PATHS = (['img', 'js'])
+STATIC_PATHS = ['img', 'js']
 
 # GitHub Pages
 FILES_TO_COPY = (('CNAME', 'CNAME'),
