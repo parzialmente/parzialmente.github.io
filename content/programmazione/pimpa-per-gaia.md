@@ -12,4 +12,4 @@ Click oppure barra spaziatrice per saltare.
 
 <script type="text/javascript" src="/static/bundle/pimpa-per-gaia/game.min.js"></script>
 
-Sperando che una volta finito le piaccia e che Altan non mi mandi gli avvocati.
+Sperando che una volta finito le piaccia e non sia già passata alle Winx.
