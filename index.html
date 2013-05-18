@@ -15,7 +15,7 @@
         <header id="banner" class="body">
                 <h1><a href="http://parzialmente.it/">parzialmente.it </a></h1>
                 <nav><ul>
-                                                                                    <li ><a href="http://parzialmente.it/category/code.html">code</a></li>
+                                                                                    <li ><a href="http://parzialmente.it/category/programmazione.html">programmazione</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
                 
@@ -23,8 +23,41 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://parzialmente.it/game-of-life-in-javascript.html">Game of Life in&nbsp;Javascript</a></h1> 
+                    <h1 class="entry-title"><a href="http://parzialmente.it/pimpa-per-gaia.html">Pimpa per&nbsp;Gaia</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-05-18T20:12:54.472845">
+                sab 18 maggio 2013
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="http://parzialmente.it/author/giacomo-ritucci.html">Giacomo Ritucci</a>
+        </address>
+        <p>In <a href="http://parzialmente.it/category/programmazione.html">programmazione</a>. </p>
+<p>tags: <a href="http://parzialmente.it/tag/50.html">50%</a><a href="http://parzialmente.it/tag/2013.html">2013</a></p>
+</footer><!-- /.post-info --><p>Gioco della Pimpa scritto in Javascript utilizzando <a href="http://impactjs.com">Impact.js</a> per mia figlia&nbsp;Gaia.</p>
+<p>Tutti i fotogrammi sono ritagliati artigianalmente dai <a href="https://www.youtube.com/results?search_query=pimpa">video della pimpa su Youtube</a>.</p>
+<p>Click oppure barra spaziatrice per&nbsp;saltare.</p>
+<canvas id="pimpa-per-gaia-canvas"></canvas>
+
+<script type="text/javascript" src="/static/bundle/pimpa-per-gaia/game.min.js"></script>
+
+<p>Sperando che una volta finito le piaccia e che Altan non mi mandi gli&nbsp;avvocati.</p>                </article>
+                            </aside><!-- /#featured -->
+                            <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+                                                
+
+                 
+                        <li><article class="hentry">    
+                <header>
+                    <h1><a href="http://parzialmente.it/game-of-life-in-javascript.html" rel="bookmark"
+                           title="Permalink to Game of Life in Javascript">Game of Life in&nbsp;Javascript</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-05-17T00:02:02.385343">
                 ven 17 maggio 2013
         </abbr>
@@ -32,58 +65,16 @@
                 <address class="vcard author">
                 By <a class="url fn" href="http://parzialmente.it/author/giacomo-ritucci.html">Giacomo Ritucci</a>
         </address>
-        <p>In <a href="http://parzialmente.it/category/code.html">code</a>. </p>
+        <p>In <a href="http://parzialmente.it/category/programmazione.html">programmazione</a>. </p>
 <p>tags: <a href="http://parzialmente.it/tag/20.html">20%</a><a href="http://parzialmente.it/tag/2010.html">2010</a></p>
-</footer><!-- /.post-info --><p><a href="http://it.wikipedia.org/wiki/Gioco_della_vita">Gioco della vita</a> di
-John Conway scritto in Javascript e disegnato sul <code>canvas</code> <span class="caps">HTML</span>.</p>
-<p>Click per brulicare, click per fermare, doppio click per&nbsp;ricominciare.</p>
-<p>Quando si dice&nbsp;l&#8217;essenzialità.</p>
-<canvas id="canvas"></canvas>
-
-<script type="text/javascript" src="/static/js/game-of-life/grid.js"></script>
-
-<script type="text/javascript" src="/static/js/game-of-life/graphics.js"></script>
-
-<script type="text/javascript" src="/static/js/game-of-life/game-of-life.js"></script>
-
-<script type="text/javascript">
-(function () {
-    // TODO: give a decent initial configuration instead of null (random)
-    GOL.init(320, 240, 1, 1, null);
-    var cnv = document.getElementById("canvas");
-    var running = false;
-    cnv.addEventListener("click", function () {
-        running = !running
-        if (running) {
-            GOL.start();
-        } else {
-            GOL.stop();
-            }
-    }, false);
-    cnv.addEventListener("dblclick", function () {
-        // http://stackoverflow.com/a/880518/54967
-        if (document.selection && document.selection.empty) {
-            document.selection.empty();
-        } else if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        }
-        if (running) {
-            running = false;
-            GOL.stop();
-        }
-        GOL.init(320, 240, 1, 1, null);
-    }, false);
-}())
-</script>
-
-<p>Il <a href="https://github.com/rjack/game-of-life">codice su GitHub</a> è
-cristallizzato su un laconico <em>sketching the <span class="caps">UI</span></em>, ennesima prova di
-quanto scrivere le <span class="caps">GUI</span> sia una grandissima rottura di&nbsp;scatole.</p>                </article>
-                                    <p class="paginator">
+</footer><!-- /.post-info -->                <p><a href="http://it.wikipedia.org/wiki/Gioco_della_vita">Gioco della vita</a> di John Conway scritto in Javascript e disegnato sul <code>canvas</code> HTML.</p>
+                <a class="readmore" href="http://parzialmente.it/game-of-life-in-javascript.html">read more</a>
+                                </div><!-- /.entry-content -->
+            </article></li>
+                            </ol><!-- /#posts-list -->
+                            <p class="paginator">
         Page 1 / 1
     </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
                         </section><!-- /#content -->
                     <section id="extras" class="body">
                         <div class="blogroll">
